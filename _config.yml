@@ -21,6 +21,7 @@ author:
   #name: "Peter Shaffery"
   avatar: "/images/prof_pic.jpg"
   #bio: "I'm a PhD student in Applied Math working with Bayesian Inverse Problems"
+  facebook: peter.shaffery
   twitter: ProofByAccident
   github: proof-by-accident
   reddit: proof_by_accident
@@ -47,13 +48,13 @@ defaults:
       sidebar:
         nav: "base_sb"
 
-  - scope:
-      path: ""
-      type: base_sb
-    values:
-      sidebar:
-      nav: "base_sb"
-
+#  - scope:
+#      path: ""
+#      type: base_sb
+#    values:
+#      sidebar:
+#      nav: "base_sb"
+#
 # Use the following plug-ins
 plugins:
   - jekyll-sitemap

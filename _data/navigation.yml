@@ -10,10 +10,3 @@ main:
     
   - title: "CV"
     url: /cv.pdf
-
-base_sb:
-  - title: "Work"
-    url: http://andrewgelman.com/
-
-  - title: "Fun"
-    url: https://www.smbc-comics.com/?id=2556
