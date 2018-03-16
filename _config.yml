@@ -9,7 +9,7 @@ github_username:  proof-by-accident
 
 # Build settings
 markdown: kramdown
-theme: minimal-mistakes-jekyll
+#theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "default" # "contrast"
 include: ["_pages"] 
 plugins:
