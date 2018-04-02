@@ -1,0 +1,61 @@
+title: Peter Shaffery
+
+description: >
+  Watch your inductive step
+baseurl: "/"
+#url: "https://petershaffery.com"
+url : "https://proof-by-accident.github.io"
+twitter_username: ProofByAccident
+github_username:  proof-by-accident
+
+# Build settings
+markdown: kramdown
+#theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "default" # "contrast"
+include: ["_pages"] 
+plugins:
+  - jekyll-feed
+
+# Theme settings
+author:
+  #name: "Peter Shaffery"
+  avatar: "/images/prof_pic.jpg"
+  #bio: "I'm a PhD student in Applied Math working with Bayesian Inverse Problems"
+  facebook: peter.shaffery
+  twitter: ProofByAccident
+  github: proof-by-accident
+  #reddit: proof_by_accident
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
+  # _posts
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      sidebar:
+        nav: "base_sb"
+
+#  - scope:
+#      path: ""
+#      type: base_sb
+#    values:
+#      sidebar:
+#      nav: "base_sb"
+#
+# Use the following plug-ins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
