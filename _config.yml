@@ -24,7 +24,7 @@ author:
   facebook: peter.shaffery
   twitter: ProofByAccident
   github: proof-by-accident
-  reddit: proof_by_accident
+  #reddit: proof_by_accident
 
 defaults:
   # _posts
