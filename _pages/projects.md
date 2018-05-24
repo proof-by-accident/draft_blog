@@ -1,0 +1,16 @@
+---
+layout: single
+title: "Projects"
+permalink: /projects
+author_profile: false 
+---
+As a graduate student I have worked on several projects for classes and elsewhere.  Here are the ones that I think are the most interesting.
+
+* __Sequential Importance Filtering for Google Flu Trends Data__
+In the mid 2000's Google released a "flu surveillance" data product, that attempted to use Google search information to infer flu incidence in the United States.  Such data could be of substantial interest to epidemiologists, as it could allow one to infer parameter values for mathematical models of flu spread.  This in turn allows policy-makers to estimate flu severity and, more importantly, target locations for treatment where flu severity will be worst.  This project looks at applying one mathematical framework, [Kalman filering](https://en.wikipedia.org/wiki/Kalman_filter), which allows parameter inference to be performed "on-line".  In other words, as Flu Trends data is generated in real time, Kalman filtering allows us to continually update our beliefs about the model generating that data.  Since a key usage of Flu Trends data would be geographical triage, we want the underlying model to have a high degree of spatial resolution, which can increase the dimenstionality of the model, and therefore the computational cost of Kalman filtering.  Therefore I implemented a variant of the Kalman filter, called the "Square Root" filter, which replicates a Monte Carlo technique called Sequential Importance Resampling, with tweaks to improve performance in high-dimensional settings.  A summary of the project can be found [here](petershaffery.com/srf_flu_trends.pdf).
+
+* __Forest Fragmentation and the Spread of Sudden Oak Death__
+Forest fragmentation is an ongoing phenomenon that has dramatic ecological consequences.  Often due to human intereference, continuous stretches of forest habitat are being reduced to isolated patches.  For many organisms which live in that habitat this can be highly damaging, as it may impede their ability to safely move between important resources or degrade the quality of services which their habitat has previously provided.  One upside of fragmentation, however, is that it may reduce the incidence of tree-killing pathogens.  For many pathogens, transmission relies on a contact event whose probability is inversely proportional to the distance between hosts.  One such pathogen, Sudden Oak Death, is especially destructive on the West Coast.  
+
+For this project I used a stochastic model of Sudden Oak Death spread to examine how forest fragmentation impacts not the overall pathogen incidence, but rather the _volatility_ of that incidence.  Volatility refers to the variance in incidence between two adjacent time-points.  Highly volatile epidemics are difficult to forecast, and may lead to catastrophic pandemics.  There is some evidence that densely connected host networks tend to produce more volatile epidemics, therefore one would expect forest fragmentation to reduce that volatility.  This expectation was borne out, somewhat, by my modelling results.  For a detailed description of this project see [here](petershaffery.com/forest_frag.pdf) and for code see [here](https://github.com/proof-by-accident/landscape_eco_final_project).
+
