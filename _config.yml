@@ -5,7 +5,7 @@ description: >
 baseurl: "/"
 #url: "https://petershaffery.com"
 url : "https://proof-by-accident.github.io"
-twitter_username: ProofByAccident
+#twitter_username: ProofByAccident
 github_username:  proof-by-accident
 
 # Build settings
@@ -22,7 +22,7 @@ author:
   avatar: "/images/prof_pic.jpg"
   #bio: "I'm a PhD student in Applied Math working with Bayesian Inverse Problems"
   facebook: peter.shaffery
-  twitter: ProofByAccident
+  #twitter: ProofByAccident
   github: proof-by-accident
   #reddit: proof_by_accident
 
