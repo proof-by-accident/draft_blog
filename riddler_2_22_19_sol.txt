@@ -32,8 +32,8 @@ _Theorem_
 D ~ Truer
 
 _Proof_
-We show this using proof by contradiction. I will make an assumption and show that it leads to contradictory conclusions, which implies that the assumption is f
-alse.
+We show this using proof by contradiction. I will make an assumption and show that it leads to contradictory conclusions,\
+which implies that the assumption is false.
 ASSUME (to contradict) that D ~ Liar:
 => E = 17 (Claim D1)
 => B ~ Truer (Claim B2)
@@ -82,4 +82,7 @@ _Solution_
 We have established that L = 19, and that Truers = {D,C} and Liars = {A,B,E}. We have that A=19, B=20, C=18, D<=16, E>=20
 
 _Comments_
-My choice to test the assertion that D ~ Truer was based on a inuition that D's statements were the most "informative". No matter if D was a Truer or Liar, they gave use the exact age of another individual, which wasn't obviously true for any other individual. In the process of proving that D ~ Truer I noticed that we had also determined that C ~ Truer as a corrolary (since we still had that D <= 16 because A ~ Liar if D ~ Truer). These two results locked up the whole thing.
+My choice to test the assertion that D ~ Truer was based on a inuition that D's statements were the most "informative". No matter
+if D was a Truer or Liar, they gave use the exact age of another individual, which wasn't obviously true for any other individual.
+In the process of proving that D ~ Truer I noticed that we had also determined that C ~ Truer as a corrolary (since we still had
+that D <= 16 because A ~ Liar if D ~ Truer). These two results locked up the whole thing.
