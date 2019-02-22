@@ -1,0 +1,64 @@
+_Notation_
+*I will refer to the first and second claims by person X as "Claim X1" and "Claim X2" respectively
+*Denote individual X having age N by X=N
+*Denote individual X being younger/older than N by X <= N or X >= N respectively
+*Denote truth/lie status of individual X as X~Truer/Liar
+
+_Knowns_
+Due to contradictions in their statements we can immediately conclude the following:
+Fact 1: Liar in {A,D}
+Fact 2: Liar in {B,E}
+Fact 3: Liar in {C,E}
+
+_Theorem_
+I will first show thatD ~ Truer
+
+_Proof_
+We now proceed using a proof by contradiction. We will make an assumption and show that it leads to contradictory conclusions, which implies that the assumption is false.
+ASSUME (to contradict) that D ~ Liar:
+=> A ~ Liar (Fact 1)
+=> D <= 16 (Claim A2) *Statement to be Contradicted
+
+=> E = 17 (Claim D1)
+=> B ~ Truer (Claim B2)
+=> E ~ Liar (Fact 2)
+=> L <= 17 (Definition and E=17)
+=> B <= 17 (Definition and L<=17)
+=> C >= 19 (Claim B1)
+=> C ~ Liar (by L<=17)
+=> D >= 22 (Claim C1)
+CONTRADICTION
+
+CONCLUDE D ~ Truer
+
+_Knowns_
+Since D ~ Truer we gain the following facts:
+Fact 4: B = 20 (Claim D2)
+Fact 5: A ~ Liar (Fact 1)
+Fact 6: D <= 16 (Claim A2)
+
+_Theorem_
+C ~ Truer
+
+_Proof_
+We will use another proof by contradiction
+ASSUME (to Contradict) C ~ Liar
+=> D >= 22 (Claim C1)
+CONTRADICTION (Fact 6)
+
+CONCLUDE C ~ Truer
+
+_Knowns_
+Since C ~ Truer we gain the following facts:
+Fact 8: E ~ Liar (Fact 3)
+Fact 9: C >= 18 (Claim E2)
+Fact 10: L >= 18 (Definition)
+Fact 11: A = 19 (Claim C2)
+Fact 12: L <= 19 (Definition and Fact 10)
+Fact 13: L = 19 (Facts 9-12)
+Fact 14: B ~ Liar (Fact 4)
+Fact 15: E >= 20 (Fact 14 and Claim B2)
+
+_Solution_
+We have established that L = 19, and that Truers = {D,C} and Liars = {A,B,E}. We have that A=19, B=20, C=18, D<=16, E>=20
+
