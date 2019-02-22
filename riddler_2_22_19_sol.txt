@@ -4,26 +4,45 @@ _Notation_
 *Denote individual X being younger/older than N by X <= N or X >= N respectively
 *Denote truth/lie status of individual X as X~Truer/Liar
 
+_Claims_
+The setup of the riddle is as follows:
+Claim A1: B > 20
+Claim A2: D > 16
+
+Claim B1: C > 18
+Claim B2: E < 20
+
+Claim C1: D < 22
+Claim C2: A = 19
+
+Claim D1: E != 17
+Claim D2: B = 20
+
+Claim E1: A > 21
+Claim E2: C < 18
+
+
 _Knowns_
-Due to contradictions in their statements we can immediately conclude the following:
+From contradictions in the claims we can immediately conclude the following:
 Fact 1: Liar in {A,D}
 Fact 2: Liar in {B,E}
 Fact 3: Liar in {C,E}
 
 _Theorem_
-I will first show thatD ~ Truer
+D ~ Truer
 
 _Proof_
-We now proceed using a proof by contradiction. We will make an assumption and show that it leads to contradictory conclusions, which implies that the assumption is false.
+We show this using proof by contradiction. I will make an assumption and show that it leads to contradictory conclusions, which implies that the assumption is f
+alse.
 ASSUME (to contradict) that D ~ Liar:
-=> A ~ Liar (Fact 1)
-=> D <= 16 (Claim A2) *Statement to be Contradicted
-
 => E = 17 (Claim D1)
 => B ~ Truer (Claim B2)
 => E ~ Liar (Fact 2)
 => L <= 17 (Definition and E=17)
 => B <= 17 (Definition and L<=17)
+=> A ~ Liar (Claim A1 and B <= 17)
+=> D <= 16 (Claim A2 and A ~ Liar) *Statement to be Contradicted
+
 => C >= 19 (Claim B1)
 => C ~ Liar (by L<=17)
 => D >= 22 (Claim C1)
@@ -62,3 +81,5 @@ Fact 15: E >= 20 (Fact 14 and Claim B2)
 _Solution_
 We have established that L = 19, and that Truers = {D,C} and Liars = {A,B,E}. We have that A=19, B=20, C=18, D<=16, E>=20
 
+_Comments_
+My choice to test the assertion that D ~ Truer was based on a inuition that D's statements were the most "informative". No matter if D was a Truer or Liar, they gave use the exact age of another individual, which wasn't obviously true for any other individual. In the process of proving that D ~ Truer I noticed that we had also determined that C ~ Truer as a corrolary (since we still had that D <= 16 because A ~ Liar if D ~ Truer). These two results locked up the whole thing.
