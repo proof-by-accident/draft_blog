@@ -21,7 +21,6 @@ Claim D2: B = 20
 Claim E1: A > 21
 Claim E2: C < 18
 
-
 _Knowns_
 From contradictions in the claims we can immediately conclude the following:
 Fact 1: Liar in {A,D}
